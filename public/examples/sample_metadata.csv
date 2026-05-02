@@ -1,0 +1,11 @@
+id,group,disease_status,sex,age,abundance,completeness,contamination,present
+SAMPLE_001,A,case,M,42,0.812,98.4,0.7,1
+SAMPLE_002,A,control,F,38,0.453,95.1,1.1,0
+SAMPLE_003,B,case,F,55,0.621,89.7,2.3,1
+SAMPLE_004,B,control,M,29,0.198,76.5,3.4,0
+SAMPLE_005,A,case,F,61,0.733,92.0,1.6,1
+SAMPLE_006,C,control,M,47,0.301,71.2,4.1,0
+SAMPLE_007,B,case,M,33,0.557,84.9,2.8,1
+SAMPLE_008,C,case,F,52,0.689,88.5,2.1,1
+SAMPLE_009,A,control,M,40,0.402,93.7,1.3,0
+SAMPLE_010,C,control,F,36,0.275,68.4,5.0,0
