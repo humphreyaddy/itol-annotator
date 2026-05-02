@@ -11,8 +11,6 @@ ready to drag straight into iTOL.
 A `.microreact` bundle that includes both metadata and a tree fills both
 slots from a single drop.
 
-Built as a maintained replacement for the unmaintained
-[`avantonder/itol_generator`](https://github.com/avantonder/itol_generator).
 
 ## Why use this
 
@@ -107,9 +105,9 @@ Adding a new iTOL annotation type = add a generator file in
 applies to a new datatype) update `ANNOTATION_COMPATIBILITY` in
 `src/types.ts`. The dropdown in the UI updates automatically.
 
-## Differences vs `avantonder/itol_generator`
+## Strengths
 
-- **Not unmaintained.** Modern stack (Vite + TypeScript + React 18).
+- **To be maintained frequently.** Modern stack (Vite + TypeScript + React 18).
 - **No CLI to install.** Runs in the browser on any OS.
 - **No data leaves your machine.** Upstream ran locally too, but ours is
   explicit about it: strict CSP, no network calls after load.
