@@ -7,6 +7,7 @@ import type {
 } from '../types';
 import { compatibleTypes, GENERATORS, TYPE_DISPLAY } from '../generators';
 import { assignColors, HEATMAP_SCALE_NAMES, PALETTE_NAMES } from '../core/palettes';
+import { EyeDropperButton } from './EyeDropperButton';
 import { OptionsForm } from './OptionsForm';
 
 type Props = {
@@ -202,8 +203,14 @@ function PerCategoryEditor({
                 onChange={(e) => onUpdate(v, { color: e.target.value })}
                 aria-label={`Color for ${v}`}
               />
+              <div className="col-span-1 flex justify-center">
+                <EyeDropperButton
+                  onPick={(hex) => onUpdate(v, { color: hex })}
+                  ariaLabel={`Pick color for ${v} from screen`}
+                />
+              </div>
               <input
-                className="input col-span-3 text-xs"
+                className="input col-span-2 text-xs"
                 placeholder="legend label"
                 value={label}
                 onChange={(e) => onUpdate(v, { legendLabel: e.target.value })}

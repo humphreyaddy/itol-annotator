@@ -12,6 +12,7 @@ import type {
   TextOptions,
   TreeColorsOptions,
 } from '../types';
+import { EyeDropperButton } from './EyeDropperButton';
 
 type Props = {
   card: AnnotationCard;
@@ -241,6 +242,7 @@ function ColorField({ label, value, onChange }: { label: string; value: string; 
           onChange={(e) => onChange(e.target.value)}
         />
         <input className="input flex-1" value={value} onChange={(e) => onChange(e.target.value)} />
+        <EyeDropperButton onPick={onChange} ariaLabel={`Pick ${label} from screen`} />
       </div>
     </div>
   );
